@@ -1,0 +1,103 @@
+.SectionPanel{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    
+}
+.leftpanel{
+    height:100vh;
+    width:100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url('https://images.pexels.com/photos/7429468/pexels-photo-7429468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+.rightpanel{
+    margin:0 auto;
+    width:70%;
+    max-width: 100%;
+}
+
+
+@media only screen and (max-width:640px){
+.rightpanel{
+    max-width: 600px;
+    width:70%
+}
+.SectionPanel{
+   display: flex;
+   flex-direction: column;
+}
+.leftpanel{
+    height:70vh
+    
+}
+.input{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.formbox{
+    background-color: white;
+    height:600px;
+    width:100%;
+    border-radius: 15px;
+    margin:60px auto;
+  padding: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+}
+
+
+
+
+.header{
+    height:80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.formbox{
+    background-color: white;
+    height:600px;
+    width:100%;
+    border-radius: 15px;
+    margin:60px auto;
+    padding-left: 40px;
+    padding-top:20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.input{
+    width: 85%;
+    height:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 10px;
+    margin-left: 30px;
+}
+*{
+    margin: 0;
+}
+label{
+    font-size: 1.2rem;
+    
+}
+input{
+    height:30px;
+    width:250px;
+}
+.custom-container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem; /* You can adjust the padding as needed */
+  }

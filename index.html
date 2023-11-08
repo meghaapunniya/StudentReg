@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Student Registration</title>
+</head>
+<body>
+  
+    <div class="SectionPanel">
+        <div class="leftpanel"></div>
+        <div class="rightpanel">
+            <div class="header">PLACEMENT DRIVE REGISTRATION</div>
+            <div  class="formbox">
+                <div class="input">
+                    <label for="firstname">First Name: </label><br>
+                    <input style="margin-left:80px" name="firstname" id="firstname" />
+                </div>
+                <div class="input">
+                    <label for="lastname">Last Name: </label><br>
+                    <input style="margin-left:80px" name="lastname" id="lastname" />
+                </div>
+                <div class="input">
+                    <label for="roll">Registration No: </label><br>
+                    <input style="margin-left:40px" name="roll" id="rollNo" type="number" />
+                </div>
+                <div class="input">
+                    <label for="email">Email: </label><br>
+                    <input style="margin-left:76px" name="email" type="email" id="email" />
+                </div>
+                <div class="input">
+                    <label for="phone">Phone: </label><br>
+                    <input style="margin-left:76px" name="phone" type="number" id="phone" />
+                </div>
+                <div class="input" style="width:88%">
+                    <label for="pic">Upload Photo: </label><br>
+                    <input style="margin-left:50px" name="pic" id="profile"  type="file" accept="image/*" />
+                </div>
+                <div class="input">
+                    <label for="skills">Skills: </label><br>
+                    <input style="margin-left:75px" name="skills" id="skills" />
+                </div>
+                <div class="input">
+                    <label for="qualifications">Qualifications: </label><br>
+                    <input style="margin-left:20px" name="qualifications" id="qualifications" />
+                </div>
+                <div class="input" style="display: flex;justify-content: space-between;align-items: center;">
+                    <button id="studentForm" onclick="submitForm()" >Submit </button> 
+                    <a href="/report.html">Check Report</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
