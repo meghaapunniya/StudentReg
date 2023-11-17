@@ -56,7 +56,8 @@ function isValidEmail(email) {
             body: formData,
         })
         .then((res)=>{
-            console.log(res.data)
+            console.log("retrieved",res.data)
+            
         })   
         .catch(error => {
             console.error("Error:", error);

@@ -95,7 +95,10 @@ input{
     width:250px;
 }
 .custom-container {
+    border: 3px solid #88679f;
     max-width: 100%;
+    width:40vw;
+    height: 100vh;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1rem;

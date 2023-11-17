@@ -73,7 +73,7 @@ var upload = multer({ storage: storage });
   
       newStudent.save()
       .then((response)=>{
-        response.status(200).json({studentData:response})
+        res.status(200).json({studentData:response})
        console.log("resp",response)
       })
       .catch((err)=>{
@@ -84,16 +84,17 @@ var upload = multer({ storage: storage });
   });
   
   // API endpoint to retrieve student qualifications
-  app.get('/get-qualifications', (req, res) => {
-      Qualification.find({}, (err, qualifications) => {
-          if (err) {
-              res.status(500).json({ error: 'Error fetching data from MongoDB' });
-          } else {
-              res.status(200).json(qualifications);
-          }
-      });
-  });
-  
+  // app.get('/get-student', (req, res) => {
+  //     Qualification.find({}, (err, qualifications) => {
+  //         if (err) {
+  //             res.status(500).json({ error: 'Error fetching data from MongoDB' });
+  //         } else {
+  //             res.status(200).json(qualifications);
+  //         }
+  //     });
+  // });
+
+ 
   
   app.listen(3000, () => {
       console.log('Server is running on port 3000');
